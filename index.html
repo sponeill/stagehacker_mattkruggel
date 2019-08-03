@@ -141,11 +141,17 @@
 
           </div>
 
-          <div class="portfolio-container">
+          <div class="portfolio-container offset-lg-1">
 
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all headshots uikits webdesign">
               <a class="popup-img" href="images/headshots/04052017_MattBugay_222.jpg">
                 <img src="images/headshots/04052017_MattBugay_222.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-2 col-md-6 portfolio-thumbnail all headshots uikits webdesign">
+              <a class="popup-img" href="images/headshots/04052017_MattBugay_268.jpg">
+                <img src="images/headshots/04052017_MattBugay_268.jpg" alt="img">
               </a>
             </div>
 
@@ -161,9 +167,27 @@
               </a>
             </div>
 
+            <div class="col-lg-2 col-md-6 portfolio-thumbnail all production uikits webdesign">
+              <a class="popup-img" href="images/production/millie_resize.jpg">
+                <img src="images/production/millie_resize.jpg" alt="img">
+              </a>
+            </div>
+          
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all production uikits photography">
               <a class="popup-img" href="images/production/343133292_568b8128_resize.jpg">
                 <img src="images/production/343133292_568b8128_resize.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all production uikits webdesign">
+              <a class="popup-img" href="images/production/177331214_img_6826_resize.jpg">
+                <img src="images/production/177331214_img_6826_resize.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-2 col-md-6 portfolio-thumbnail all headshots uikits webdesign">
+              <a class="popup-img" href="images/headshots/04052017_MattBugay_206_ret.jpg">
+                <img src="images/headshots/04052017_MattBugay_206_ret.jpg" alt="img">
               </a>
             </div>
 
@@ -173,11 +197,7 @@
               </a>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all production uikits webdesign">
-              <a class="popup-img" href="images/production/177331214_img_6826_resize.jpg">
-                <img src="images/production/177331214_img_6826_resize.jpg" alt="img">
-              </a>
-            </div>
+          
 
           </div>
         </div>
@@ -339,20 +359,29 @@
 
 </html>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 
 $(document).ready(function() {
 
-  var waypoint = new Waypoint({
-      element: document.getElementById('contact-matt'),
-      handler: function(direction) {
-        console.log('WP');
-        if(direction === 'down') {
-          console.log('Down');
-          AnimateContact();
-        };
-      },
-      offset: '95%'
+  // var waypoint = new Waypoint({
+  //     element: document.getElementById('contact-matt'),
+  //     handler: function(direction) {
+  //       console.log('WP');
+  //       if(direction === 'down') {
+  //         console.log('Down');
+  //         AnimateContact();
+  //       };
+  //     },
+  //     offset: '95%'
+  // })
+
+  var waypoints = $('#contact-matt').waypoint({
+    handler: function(direction) {
+      if(direction === 'down') {
+        console.log('Going Down.');
+      }
+    },
+    offset: '95%'
   })
 
     //       $('#contact-matt').waypoint(function(direction) {
@@ -371,4 +400,4 @@ $(document).ready(function() {
         $("#email-button").addClass('animated fadeInUp');
     };
   });
- </script> -->
+ </script>
