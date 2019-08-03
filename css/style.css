@@ -113,6 +113,7 @@ p {
 }
 
 .btn:hover, .btn:focus {
+  background: rgb(90, 88, 88);
   color: #fff;
 }
 
@@ -297,7 +298,7 @@ nav ul li a {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #56534f;
 }
 
 #about .div-img-bg .about-img img {
