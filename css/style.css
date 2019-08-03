@@ -312,7 +312,7 @@ nav ul li a {
 #about .about-descr .p-heading {
   /* font-family: 'Playfair Display', serif; */
   font-size: 28px;
-  text-align: left;
+  text-align: center;
 }
 
 #about .about-descr .separator {
@@ -568,6 +568,10 @@ nav ul li a {
   margin: 0 0 20px;
   font-weight: 400;
   font-size: 13px;
+}
+
+.contact-email-only {
+  text-align: center !important;
 }
 
 /*-----------------------------------------------------------------------------------*/
