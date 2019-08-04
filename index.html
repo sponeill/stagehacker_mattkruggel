@@ -76,7 +76,7 @@
     <div class="container">
       <div class="header-content">
         <h1><span class="typed"></span></h1>
-        <p>no longer in my 20's</p>
+        <p id="tagline"></p>
       </div>
     </div>
   </div>
@@ -141,6 +141,7 @@
 
           </div>
 
+          <!-- TODO: CHANGE HEIGHT OF VERTICAL PHOTOS TO MATCH HORIZONTAL ONES -->
           <div class="portfolio-container offset-lg-1">
 
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all headshots uikits webdesign">
@@ -363,41 +364,11 @@
 
 $(document).ready(function() {
 
-  // var waypoint = new Waypoint({
-  //     element: document.getElementById('contact-matt'),
-  //     handler: function(direction) {
-  //       console.log('WP');
-  //       if(direction === 'down') {
-  //         console.log('Down');
-  //         AnimateContact();
-  //       };
-  //     },
-  //     offset: '95%'
-  // })
-
-  var waypoints = $('#contact-matt').waypoint({
-    handler: function(direction) {
-      if(direction === 'down') {
-        console.log('Going Down.');
-      }
-    },
-    offset: '95%'
-  })
-
-    //       $('#contact-matt').waypoint(function(direction) {
-    //             if (direction === 'down') {
-    //                 console.log('Waypoint hit');
-    //                 AnimateWhatsNew();
-    //             }
-    //         },
-    //         {
-    //             offset: '50%'
-    //         });
-    // });
-
-    function AnimateContact() {
-        $(".whats-new-animation").fadeTo(2000, 1);
-        $("#email-button").addClass('animated fadeInUp');
-    };
-  });
+    var tags = ['No longer In My 20\'s', 'Social Media Followers < 10', 'Equal Parts Snarky and Sincere', 'Exeptionally Mediocre At Most Things', 'All About The Storytelling'];
+    var number = Math.floor(Math.random() * 5);
+    var randomTag = tags[number];
+    console.log(randomTag);
+    console.log(randomTag);
+    $('#tagline').text(randomTag);
+})
  </script>
